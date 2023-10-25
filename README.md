@@ -13,14 +13,14 @@ Install the
 Install the sdk
 ```sh
 cd agoric-sdk
-git checkout 65d3f14c8102993168d2568eed5e6acbcba0c48a
+git checkout
 yarn && yarn build
 ```
 
 Install the dapp
 ```sh
-git clone https://github.com/Jorge-Lopes/agoric-assignment-6.git
-cd agoric-assignment-6
+git clone https://github.com/xinminsu/agoric-dapp-card-store.git
+cd agoric-dapp-card-store
 agoric install
 ```
 
@@ -44,14 +44,14 @@ agoric open --repl
 
 Deploy the contract
 ```sh
-cd agoric-assignment-6
+cd agoric-dapp-card-store
 agoric deploy contract/deploy.js api/deploy.js
 ```
 
 Start UI, 
 ```sh
 # Navigate to the `ui` directory and start a local server
-cd agoric-assignment-6/ui && yarn start
+cd agoric-dapp-card-store/ui && yarn start
 ```
 
 ## Using the Dapp
