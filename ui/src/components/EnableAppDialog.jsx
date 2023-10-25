@@ -26,7 +26,7 @@ const EnableAppDialog = ({ open, handleClose }) => {
         </DialogContentText>
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleClose} color="primary" autoFocus>
+        <Button onClick={handleClose} color="primary" autoFocus={true}>
           OK
         </Button>
       </DialogActions>
