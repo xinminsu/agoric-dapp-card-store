@@ -40,6 +40,7 @@ Start `ag-solo-1`
 ```sh
 cd agoric-sdk/packages/cosmic-swingset
 make scenario2-run-client-1
+```
 
 Open your wallet UI
 ```sh
