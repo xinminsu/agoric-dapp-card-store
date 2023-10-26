@@ -58,7 +58,7 @@ const CardAuctionForm = ({ tokenPurses, tokenDisplayInfo, onSubmit }) => {
   return (
     <Box className={classes.root}>
       {error && <Typography color="error">{error}</Typography>}
-      <FormControl className={classes.item} fullWidth>
+      <FormControl className={classes.item} fullWidth={true}>
         <InputLabel id="auction-purse-select-label">Purse</InputLabel>
         <Select
           labelId="auction-purse-select-label"
@@ -76,7 +76,7 @@ const CardAuctionForm = ({ tokenPurses, tokenDisplayInfo, onSubmit }) => {
           ))}
         </Select>
       </FormControl>
-      <FormControl className={classes.item} fullWidth>
+      <FormControl className={classes.item} fullWidth={true}>
         <TextField
           id="outlined-error"
           label="Bid amount"
@@ -87,7 +87,7 @@ const CardAuctionForm = ({ tokenPurses, tokenDisplayInfo, onSubmit }) => {
           }}
         />
       </FormControl>
-      <FormControl className={classes.item} fullWidth>
+      <FormControl className={classes.item} fullWidth={true}>
         <Button
           disabled={isSubmitting}
           onClick={submitBidOffer}

@@ -12,8 +12,8 @@ Install the
 
 Install the sdk
 ```sh
+git clone --branch multi-users https://github.com/xinminsu/agoric-sdk
 cd agoric-sdk
-git checkout
 yarn && yarn build
 ```
 
@@ -36,10 +36,21 @@ cd agoric-sdk/packages/cosmic-swingset
 make scenario2-run-client
 ```
 
+Start `ag-solo-1`
+```sh
+cd agoric-sdk/packages/cosmic-swingset
+make scenario2-run-client-1
+
 Open your wallet UI
 ```sh
-cd agoric-sdk/packages/cosmic-swingset/t1
-agoric open --repl
+cd agoric-sdk/packages/cosmic-swingset/t1/8000
+agoric open --repl --hostport=localhost:8000
+```
+
+Open your wallet UI 1
+```sh
+cd agoric-sdk/packages/cosmic-swingset/t1/8001
+agoric open --repl --hostport=localhost:8001
 ```
 
 Deploy the contract
